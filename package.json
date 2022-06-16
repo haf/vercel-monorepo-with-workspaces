@@ -9,5 +9,8 @@
   "packageManager": "yarn@3.2.0",
   "dependencies": {
     "node-gyp": "^9.0.0"
+  },
+  "scripts": {
+      "ci": "(cd sdk && yarn run build) && (cd web && yarn run build)"
   }
 }
